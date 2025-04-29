@@ -306,5 +306,3 @@ This C++ program uses `std::generator` to create an asynchronous generator that 
 | C++ | `std::generator` | Range-based `for` loop |
 
 Each language has its own approach to asynchronous programming, but the core concepts remain consistent: asynchronous generators allow for lazy evaluation and non-blocking operations, while async comprehensions provide a concise way to collect values from these generators.
-
-If you need further assistance with any of these implementations or have questions about other languages, feel free to ask!
