@@ -55,6 +55,7 @@ class TestAccessNestedMap(TestCase):
         with self.assertRaises(KeyError):
             utils.access_nested_map({"a": 1, "b": 2}, ("c",))
 
+
 class TestGetJson(unittest.TestCase):
     """
     TestGetJson class that inherits from unittest.TestCase
@@ -63,7 +64,6 @@ class TestGetJson(unittest.TestCase):
         ("http://example.com", {"payload": True}),
         ("http://holberton.io", {"payload": False}),
     ])
-
     def test_get_json(self, url, expected):
         """
         Test get_json function
@@ -74,6 +74,7 @@ class TestGetJson(unittest.TestCase):
         self.assertEqual(utils.get_json(url), expected)
         mock_get.assert_called_once_with(url)
         patcher.stop()
+
 
 class TestMemoize(unittest.TestCase):
     """
@@ -92,7 +93,7 @@ class TestMemoize(unittest.TestCase):
                 a_method function
                 """
                 return 42
-            
+
             @utils.memoize
             def a_property(self):
                 """
